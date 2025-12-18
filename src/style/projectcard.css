@@ -1,0 +1,122 @@
+/* Horizontal Card Container */
+.project-card-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  color:white;
+  box-shadow: 0 13px 25px rgba(127, 240, 240, 0.287);
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project-card-horizontal:hover {
+  transform: scale(1.02);
+}
+
+/* Left Section - Takes 60% width */
+.left-section {
+  flex: 1;
+  min-width: 60%;
+}
+
+.project-number {
+  color: #39fcef;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
+  color:white;
+}
+
+.small-description {
+  color: #c0c4cb;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.code-btn, .demo-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.code-btn {
+  background: #61cef3;
+  color: white;
+}
+
+.demo-btn {
+  background: #6f79eb;
+  color: white;
+}
+
+/* Right Section - Takes 40% width */
+.right-section {
+  flex: 0 0 35%;
+  text-align: center;
+}
+
+.image-container {
+    position: relative; 
+    margin-bottom: 20px;
+  
+  
+}
+
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+  
+  object-fit:fill;
+  border-radius: 8px;
+}
+
+.status-badge {
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(121, 114, 211, 0.639);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.status-badge.completed {
+  color: #60a7f2;
+}
+
+/* .status-badge['in-progress'] {
+  color: #92400e;
+} */
+
+.tech-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-tag {
+  background: #4670fc;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,17 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+  min-height: 60vh; 
+  gap: 5px; 
+  font-family:  "Caveat", cursive;   
+  font-size:25px  
+}
+.cv{
+    margin :5px;
+    width: 200px;
+    height: 200px;
+
+
+}
