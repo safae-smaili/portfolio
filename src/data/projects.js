@@ -10,10 +10,35 @@ export const projects = [
     // demoUrl:"https://github.com/",
     category: "AI",
     status: "Completed",
-    image: "../../Tesla.png" 
+    image: "Tesla.png" 
   },
   {
-    id: 2,
+    id:2,
+    title:"movie recommandation system",
+    smallDescription:"This project is to build, deploy, and use a model that will predicte similarity movies, I start by fetching the data from TMDP api then use this data with tf-idf for vectorisation, cosine similarity to calculate the angle between 2 vector then flask to build the api and Railway to deploy it  ",
+    descriptinon:"",
+    tech:["Flask","API","ML","TF-IDF"],
+    codeUrl:"https://github.com/safae-smaili/movie_recommendation.git",
+    demoUrl:"https://movie-website-withrecommandation.vercel.app/Movies/83533",
+    category:'ML',
+    status:"Completed",
+    image:"sim.png"
+
+  },{
+    id:3,
+    title:"Debiasing Facial Detection Systems",
+    smallDescription:"This project I was learning from an MIT cours on the concept of debiasing systems that learn concepts rather than pattern recognition. Regular neural nets may not learn to identify people from minority groups because it learns to identify the pattern. It employs the strategy of a Variational Autoencoder, forcing the AI to learn the essential nature that defines something as a face.",
+    descriptinon:"",
+    tech:["Pytorch,CNN,VAE encoder"],
+    codeUrl:"https://github.com/safae-smaili/Debiasing_Facial_Detection_Systems.git",
+    //demoUrl:""
+    category:"DL",
+    status:"Completed",
+    image:"face.png",
+
+  },
+  {
+    id: 4,
     title: "Darija to Arabic and English translator ",
     smallDescription:"I'm still working on this project. The idea is to make one model capable of translating into two languages from Darija. The general idea is to create a model with one encoder and two decoders—one for English and the other for Arabic. This way, the translator will be powerful. Once I finish the project, it will be here, insha'Allah.",
     description: "",
@@ -22,9 +47,9 @@ export const projects = [
     // demoUrl: "https://github.com/",
     category: "NLP",
     status: "In progress",
-    image:"../../translation.webp"
+    image:"translation.webp"
   },{
-    id:3,
+    id:5,
     title:"Restaurant ratings.",
     smallDescription:"In this project I use a multiple linear regression model to determine the best feature to predict the ratings of a restaurant, I use the Yelp data set with is very missy data, the real chalange was understanding and cleaning the data",
     description:"",
@@ -32,10 +57,10 @@ export const projects = [
     codeUrl:"https://github.com/safae-smaili/Restaurant-ratings",
     category:"ML",
     status:"Completed",
-    image:'../../stars.png'
+    image:'stars.png'
   },
 {
-    id:4,
+    id:6,
     title:"RAG project",
     smallDescription:"At this project I use gemini API to create a chatbot and impelemanting the RAG conceptes to make it generate unswars based on a file i give it to it.",
     description:'',
@@ -43,11 +68,11 @@ export const projects = [
     codeUrl:'https://github.com/safae-smaili/RAG_learning-',
     category:'AI',
     status:'Completed',
-    image:'../../Rag.png'
+    image:'Rag.png'
 
 },
     {
-    id:5,
+    id:7,
     title:"Movie website",
     smallDescription:'In this project i fetch the data from an externe API, Implement the cherching taIn this project, I fetch data from an external API and add it to the website. I also create a section to display information about movies, implement searching functions, and add new movies using a form.',
     description:'',
@@ -56,7 +81,7 @@ export const projects = [
     demoUrl:'https://safae-smaili.github.io/movies/',
     category:'dev',
     status:'Completed',
-    image:'../../movies.png'
+    image:'movies.png'
   },
 ];
 console.log('✅ projects.js loaded');
